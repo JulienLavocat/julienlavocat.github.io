@@ -26,17 +26,17 @@ params:
     - name: "medium"
       url: "https://medium.com/@julienlavocat"
 
-  menu:
-    main:
-      - identifier: about
-        name: About Me
-        url: about-me
-      - identifier: work
-        name: Work
-        url: work
-      - identifier: projects
-        name: Projects
-        url: projects
-      - identifier: listory
-        name: Favorite Music
-        url: listory
+menu:
+  main:
+    - identifier: about
+      name: About Me
+      url: about-me
+    - identifier: work
+      name: Work
+      url: work
+    - identifier: projects
+      name: Projects
+      url: projects
+    - identifier: listory
+      name: Favorite Music
+      url: listory
