@@ -2,3 +2,26 @@ baseURL: https://julienlavocat.me
 languageCode: en-us
 title: Julien Lavocat
 theme: PaperMod
+
+params:
+  profileMode:
+    enabled: true
+    title: "Julien Lavocat"
+    subtitle: "Fullstack software engineer"
+    imageUrl: "./profile.webp"
+    imageTitle: "A picture of me"
+    imageWidth: 240
+    imageHeight: 240
+    buttons:
+      - name: About Me
+        url: "/about-me"
+      - name: Favorite Music
+        url: "/listory"
+
+  socialIcons: # optional
+    - name: github
+      url: "https://github.com/JulienLavocat"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/julienlavocat/"
+    - name: "medium"
+      url: "https://medium.com/@julienlavocat"
