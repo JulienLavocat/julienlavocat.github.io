@@ -1,0 +1,80 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
+skills:
+  - name: Node.js
+    level: expert
+    keywords:
+      - Typescript
+      - Nest.js
+
+  - name: Kubernetes
+    level: advanced
+    keywords:
+      - Operators
+      - GitOps
+      - Workload deployment
+
+  - name: CI/CD
+    level: advanced
+    keywords:
+      - Github Actions
+      - Jenkins
+
+  - name: Infrastructure as Code
+    level: intermediate
+    keywords:
+      - Terraform
+
+  - name: Backend Development
+    level: advanced
+    keywords:
+      - REST APIs
+
+  - name: Cloud
+    level: advanced
+    keywords:
+      - AWS
+      - GCP
+      - Scaleway
+      - Hetzner Cloud
+
+  - name: Databases
+    level: advanced
+    keywords:
+      - MongoDB
+      - Redis
+      - CassandraDB
+      - PostgreSQL
+      - etcd
+
+  - name: Go
+    level: beginner
+
+languages:
+  - language: German
+    fluency: Native speaker
+  - language: English
+    fluency: Fluent (C2)
+
+interests:
+  - name: Video Games
+    keywords:
+      - FPS
+      - Action/Adventure
+      - MMORPG
+  - name: Pen & Paper RPGs
+    keywords:
+      - Fantasy
+      - Own ruleset
+  - name: Music
+    keywords:
+      - Rock
+      - Metal
+      - Techno
+
+work: []
+references: []
+education: []
+projects: []
+volunteer: []
+awards: []
+publications: []
