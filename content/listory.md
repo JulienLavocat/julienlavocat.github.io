@@ -1,6 +1,9 @@
 ---
 title: "My Favorite Music"
 type: listory
+ShowReadingTime: false
+ShowShareButtons: false
+ShowTOC: false
 ---
 
 Last Update: {{< current-day >}}
