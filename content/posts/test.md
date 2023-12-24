@@ -1,8 +1,6 @@
 ---
-title: "Test"
-date: 2023-12-24T13:55:34+01:00
+title: "Hello there"
+date: 2020-01-01
 draft: true
 ShowShareButtons: true
 ---
-
-Hi there :)
