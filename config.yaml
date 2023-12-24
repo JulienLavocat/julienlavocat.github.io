@@ -3,6 +3,8 @@ languageCode: en-us
 title: Julien Lavocat
 theme: PaperMod
 
+enableEmoji: true
+
 params:
   profileMode:
     enabled: true
@@ -17,6 +19,8 @@ params:
         url: "/about-me"
       - name: Favorite Music
         url: "/listory"
+      - name: Blog
+        url: "/posts"
 
   socialIcons: # optional
     - name: github
@@ -25,6 +29,9 @@ params:
       url: "https://www.linkedin.com/in/julienlavocat/"
     - name: "medium"
       url: "https://medium.com/@julienlavocat"
+
+  ShowReadingTime: true
+  ShowTOC: true
 
 menu:
   main:
@@ -40,3 +47,6 @@ menu:
     - identifier: listory
       name: Favorite Music
       url: listory
+    - identifier: blog
+      name: Blog
+      url: posts
