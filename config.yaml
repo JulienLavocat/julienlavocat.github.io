@@ -38,15 +38,20 @@ menu:
     - identifier: about
       name: About Me
       url: about-me
-    - identifier: work
-      name: Work
-      url: work
-    - identifier: projects
-      name: Projects
-      url: projects
-    - identifier: listory
-      name: Favorite Music
-      url: listory
+      weight: 10
     - identifier: blog
       name: Blog
       url: posts
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: projects
+      weight: 30
+    - identifier: work
+      name: Work
+      url: work
+      weight: 40
+    - identifier: listory
+      name: Favorite Music
+      url: listory
+      weight: 50
