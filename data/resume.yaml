@@ -71,10 +71,93 @@ interests:
       - Metal
       - Techno
 
-work: []
-references: []
-education: []
-projects: []
-volunteer: []
-awards: []
-publications: []
+work:
+  - name: Leadformance / Solocal
+    website: https://www.solocal.com/solutions-pour-reseaux
+    position: Fullstack developer
+    startDate: 2022-11-15
+    keywords:
+      - Angular / AngularJS
+      - Nest.js
+      - Node.js
+      - Typescript
+      - MongoDB
+      - Python / Django
+      - RabbitMQ
+      - Kubernetes
+    summary: |
+      Leadformance is a SaaS company that provides a platform to manage the online presence of a network of stores, aiming to convert a website visitor into a physical customer.
+      Working with an international team communicating in english, I've intervened on the whole application lifecycle from the frontend to the backend, including the infrastructure and the CI/CD pipelines, ensuring the quality of the code and the reliability of the platform.
+      I've also been in charge of the onboarding of new developers, and the training of the team on the new technologies we've been using.
+    highlights:
+      - Proposing a new architecture for our fleet of custom websites for our customers, moving away from a PHP/Symfony in profit of pre-rendered pages served from an S3 bucket. Pages are updated and rendered each time a store is modified by listening to events from the backend.
+      - Leading the implementation of an integration with an external service to provide a new feature to our customers
+  - name: Iteatime
+    position: Fullstack developer
+    startDate: 2021-11-15
+    website: https://www.linkedin.com/company/iteatime/
+    keywords:
+      - Nest.js
+      - Angular
+      - ReactJS
+      - Typescript
+      - MongoDB
+      - Heroku
+      - Netlify
+    highlights:
+      - Nextop - SaaS to generate timetable for public transport companies from their GTFS data
+      - Acrabadabra - SaaS to edit and manage timesheets and invoices for consulting companies and their collaborators
+    summary: |
+      Iteatime is a consulting company specialized in web development. I worked on various projects such as Nextop and Acrabadabra as a fullstack developer, implementing new features and fixing bugs.
+      I've also been introduced to project management as I was in charge of setting up a project management tool and architecturing the backend of Acrabadabra.
+
+projects:
+  - name: Indiebackend
+    startDate: 2019-01-01
+    keywords:
+      - Kubernetes
+      - PostgreSQL
+      - Nest.js
+      - Angular
+      - Typescript
+      - Go
+      - ArgoCD
+      - Github Actions
+    highlights:
+      - GitOps approach for deployment
+      - Kubernetes cluster on Scaleway
+      - Client SDK for Unity and Godot
+      - Admin SDK for Node.js and Python
+    description: |
+      A backend as a service for indie game developers, providing a set of tools to help them build their games without investing too much on their backend.
+
+      It's a side project I've been working on for a few years now.
+      It provides a set of tools to help indie game developers build their game, such as a database, a matchmaking system, a chat system, a leaderboard system, and more that aims to be easily integrated in a game thanks to a client SDK (for Unity, Godot, and more) and an Admin SDK (for Node.js, Python, and more).
+      Everything is deployed following GitOps approach on a Kubernetes cluster, with ArgoCD and Github Actions.
+  - name: Aria Online
+    startDate: 2023-08-01
+    keywords:
+      - Jira and Confluence
+      - Godot
+      - C#
+      - PostgreSQL
+      - Node.js
+      - Typescript
+      - Kubernetes
+      - FluxCD
+      - Github Actions
+      - Steam
+    description: |
+      Aria Online is a 3D MMORPG, mostly focused on PvP involving three factions fighting for the control of the world. It's main focus is to provide a fun and challenging PvP experience in a single-world and quick-to-join environment.
+      There is no notion of leveling or classes in Aria Online, instead, players can choose their own path and specialize in the skills they want to use (mostly dictated by the weapons they use).
+
+      I'm challenging myself to build a MMORPG from scratch, from the game client to the backend, and the infrastructure following GitOps approach. It's a very fun project as I'm learning a lot of new things, as much on the technical side as on the communication side as I'm trying to be as transparent as possible on the development of the game.
+
+      Due to the GitOps approach, everything pushed to the main branch of the repository is automatically deployed on the production environment thanks to FluxCD and Github Actions after a new version is created (versioning is done automatically thanks to conventional commits), also the client is automatically built and deployed on Steam for my friends to be able to test the game (and maybe in the future, for the players to be able to play the actual game)
+
+      See my blog for more details, it's a very ambitious project and I'm trying to document as much as possible my progress on it.
+
+      - **Client**: I'm using Godot as the game engine, and GDScript as the scripting language.
+      - **Game Server**:  I'm using a pure C# server and an ECS architecture to handle the game logic as I liked the flexibility it provides when implementing a new features (rather than the performance gain). I also try to be as allocation-free as possible to avoid any garbage collection.
+      - **API**: I'm using Nest.js as the framework for the API, and Typescript as the language as they are technologies that I'm familiar with and I don't want to spend too much time on this as the end goal will be to use Indiebackend
+      - **Infrastructure**: I'm using Kubernetes and FluxCD to deploy each components automatically when a new version is pushed to the main branch of the repository.

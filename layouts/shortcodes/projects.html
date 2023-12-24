@@ -16,7 +16,7 @@
     {{ end}}
   </div>
 
-  <div>{{.summary | markdownify}}</div>
+  <div>{{.description | markdownify}}</div>
 
   {{ if (isset . "highlights") }}
   <ul>
