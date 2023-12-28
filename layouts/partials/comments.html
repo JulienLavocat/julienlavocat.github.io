@@ -1,0 +1,31 @@
+<script id="blog-giscus-script">
+  const isDarkTheme = document.body.classList.contains("dark");
+
+  const giscusConfig = {
+    "data-repo": "JulienLavocat/julienlavocat.github.io",
+    "data-repo-id": "R_kgDOJeFRKw",
+    "data-category": "Blog posts",
+    "data-category-id": "DIC_kwDOJeFRK84CcDc1",
+    "data-mapping": "pathname",
+    "data-strict": "0",
+    "data-reactions-enabled": "1",
+    "data-emit-metadata": "0",
+    "data-input-position": "top",
+    "data-theme": isDarkTheme ? "dark" : "light",
+    "data-lang": "en",
+    "data-loading": "lazy",
+  };
+
+  // TODO: Find a way to change theme when the user click on the button, for now it needs a refresh
+
+  const scriptEl = document.createElement("script");
+  scriptEl.src = "https://giscus.app/client.js";
+  scriptEl.async = true;
+  scriptEl.crossOrigin = "anonymous";
+  Object.entries(giscusConfig).forEach(([key, value]) => {
+    scriptEl.setAttribute(key, value);
+  });
+  document
+    .getElementById("blog-giscus-script")
+    .parentElement.appendChild(scriptEl);
+</script>

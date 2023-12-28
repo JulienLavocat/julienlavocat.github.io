@@ -33,6 +33,8 @@ params:
   ShowReadingTime: true
   ShowTOC: true
 
+  comments: true
+
 menu:
   main:
     - identifier: about
