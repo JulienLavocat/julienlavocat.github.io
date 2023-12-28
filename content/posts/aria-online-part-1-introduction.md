@@ -1,40 +1,33 @@
 ---
 title: "Aria Online Devblog: Part 1 - Introduction"
 date: 2020-01-01
-draft: false
+draft: true
 ShowShareButtons: true
 ---
 
-[THIS IS A DRAFT, I ADVISE YOU TO COME BACK LATER, FOLLOW ME ON LIKEDIN TO KNOW WHEN IT'S READY]
-
 # Introduction
 
-During my research I've noticed that it's hard to come accors resources explaining how an actual MMORPG works. When you find an article or a devblog often the content is quite shallow and doesn't go beyond a single server and sparse details about it's deployment or most of the logic is client-sided. I believe that if people often says "making and MMO is the hardest thing in gamedev" it's partially due to the lack of in-depth documentation around this topic.  
-With this devblog, I'd like to be able to go deeper into the rabbithole and provide some strong bases for the next person that will want to develop such games.
+Over the course of the past few months (the project's first commit was on september 29nth, 2023), I have been hard at work on a "little" side project that I hope to be able to publish one day, an MMORPG.
+Although still in development and lacking a lot of features, I've gained a lot of knowledges that I would like to share and I've enough
 
-## Disclaimer
-
-I'm not a game developer, I'm a fullstack software developer mainly working with Angular and NestJS but I will bring what I know about software engineering and try to apply as much as I can to the game, mainly around CI/CD and deployment.  
-Don't expect to see some crazy graphics or artworks, also you shouldn't expect me to nail the game design on my first try.
+In my research, I've observed a challenge: finding resources that explain how MMORPGs work in-depth is not easy. Articles and devblogs often stay surface-level, focusing on a single server with limited details on deployment or overly emphasizing client-side logic. The common belief that "making an MMO is the hardest thing in gamedev" is, in my opinion, partly due to the lack of comprehensive documentation on this topic. Through this devblog, my intention is to thoroughly explore this realm, encompassing topics such as CI/CD, network protocols, Kubernetes, and the creation of external tools like a spell editor. The objective is to establish a robust foundation for aspiring MMORPG developers in the future.
 
 # The Game
 
-Before going any futher, let's talk a bit about the game and set some expectations about it's scope.  
-When I think about the game I imagine something PvP-focused with a very-short / no leveling at all (mostly improving your equipment) and relatively easy to pickup but harder to master and only one server per continent.  
-Here is list of some games that inspired me :
+> Aria Online is a PvP MMORPG where you step into the shoes of a soldier engaged in the ongoing war between three factions. Action is at your fingertips the moment you log in, with no sharding or multiple servers (except maybe one per continent). Every character coexists in the same shared world.
 
-- **PvP / Realm vs Realm**: Guild Wars 2 and PlanetSide 2
-- **Equipment / No classes**: New World and Albion Online
+Before delving deeper, let's discuss the game and establish some expectations regarding its scope.
 
-And here is a little pitch about the game :
+When conceptualizing the game, I imagine a PvP-centric adventure that minimizes or completely discards traditional leveling mechanics, placing a significant emphasis on enhancing equipment. The goal is to create an easily approachable game while providing a more challenging learning curve for those aiming for mastery. The current plan is to maintain a single server for the entire world, though this approach may undergo adjustments based on the practicality of resolving severe latency issues—potentially leading to a compromise of one server per continent at the most extreme.
 
-Aria Online is a PvP MMORPG in which you won't be a hero but a mere soldier fighting the war between 3 factions, you will be able to jump into the action as soon as you're online. There will be no sharding nor multiple servers (except maybe one per continent as I'm not sure if I would be able to tackle such extreme latency issues), every character will exists in the same world.
+Here are some of my inspirations for the game:
 
-As I said before, I'm neither a game developer not an artist so you won't see some crazy beatiful arts here but I will try to do my best :D Worst, I'm working on this alone.
+- PvP / Realm vs Realm: Guild Wars 2, Foxhole, Dark Age Of Camelot, PlanetSide 2
+- Equipment / No classes: New World and Albion Online
 
 # What I will cover
 
-In future chapters, I will try to cover as much as I can everything I did, from the game design to how I choose to deploy my fleet of servers. Here are some examples of such topics :
+In the upcoming articles, I plan to extensively cover all the topics I've touched upon, ranging from game design to the deployment of my server fleet. Here's a sneak peek into the topics I plan to delve into:
 
 - Client architecture (Godot)
 - Game server architecture (C#, ECS)
@@ -49,4 +42,4 @@ In future chapters, I will try to cover as much as I can everything I did, from 
 
 # Conclusion
 
-I hope to have picked your curiosity, feel free to follow me to see the next chapter of this adventure :)
+Feel free to join me on this journey and stay tuned for the upcoming chapters, follow me on LinkedIn to be notified when the next article is published.
