@@ -1,0 +1,50 @@
+<script async>
+  // When document is ready, find relative-date elements and use relative date format
+  document.addEventListener("readystatechange", (event) => {
+    if (event.target.readyState !== "complete") {
+      return;
+    }
+
+    const formatter = new Intl.RelativeTimeFormat("en-US", {
+      numeric: "auto",
+    });
+
+    const elements = document.querySelectorAll(".relative-date");
+    console.log(elements);
+    elements.forEach((element) => {
+      let date;
+      try {
+        date = new Date(element.innerText);
+      } catch (err) {
+        console.error("Element does not have a proper date");
+        return;
+      }
+
+      const diffMs = new Date() - date;
+      const hoursSince = diffMs / 1000 / 60 / 60;
+      const daysSince = hoursSince / 24;
+
+      let formatted = "";
+
+      if (daysSince > 1) {
+        formatted = formatter.format(-Math.round(daysSince), "days");
+      } else if (hoursSince > 1) {
+        formatted = formatter.format(-Math.round(hoursSince), "hours");
+      } else {
+        formatted = "Just Now!";
+      }
+
+      const capitalized =
+        formatted.charAt(0).toUpperCase() + formatted.slice(1);
+
+      element.innerText = capitalized;
+    });
+  });
+</script>
+{{ if not hugo.IsServer }}
+<script
+  async
+  src="https://umami.jlavocat.eu/script.js"
+  data-website-id="d0dbf1d1-560a-4a5d-acd9-45ac35793f63"
+></script>
+{{ end }}
