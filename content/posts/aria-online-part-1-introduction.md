@@ -1,16 +1,15 @@
 ---
 title: "Aria Online Devblog: Part 1 - Introduction"
 date: 2020-01-01
-draft: true
 ShowShareButtons: true
 ---
 
 # Introduction
 
 Over the course of the past few months (the project's first commit was on september 29nth, 2023), I have been hard at work on a "little" side project that I hope to be able to publish one day, an MMORPG.
-Although still in development and lacking a lot of features, I've gained a lot of knowledges that I would like to share and I've enough
+Although still in development and lacking a lot of features, I've gained a lot of knowledges that I would like to share.
 
-In my research, I've observed a challenge: finding resources that explain how MMORPGs work in-depth is not easy. Articles and devblogs often stay surface-level, focusing on a single server with limited details on deployment or overly emphasizing client-side logic. The common belief that "making an MMO is the hardest thing in gamedev" is, in my opinion, partly due to the lack of comprehensive documentation on this topic. Through this devblog, my intention is to thoroughly explore this realm, encompassing topics such as CI/CD, network protocols, Kubernetes, and the creation of external tools like a spell editor. The objective is to establish a robust foundation for aspiring MMORPG developers in the future.
+In my research, I've observed a challenge: finding resources that explain how MMORPGs work in-depth is not easy. Articles and devblogs often stay surface-level, focusing on a single server with limited details on deployment or overly emphasizing client-side logic. The common belief that "making an MMO is the hardest thing in gamedev" is, in my opinion, partly due to the lack of comprehensive documentation on this topic. Through this devblog, my intention is to thoroughly explore this realm, encompassing topics such as CI/CD, network protocols, Kubernetes, and the creation of external tools like a spell editor. The objective is to establish a robust foundation for aspiring MMORPG developers.
 
 # The Game
 
