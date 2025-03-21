@@ -17,8 +17,6 @@ params:
     buttons:
       - name: About Me
         url: "/about-me"
-      - name: Favorite Music
-        url: "/listory"
       - name: Blog
         url: "/posts"
 
@@ -53,7 +51,3 @@ menu:
       name: Work
       url: work
       weight: 40
-    - identifier: listory
-      name: Favorite Music
-      url: listory
-      weight: 50
